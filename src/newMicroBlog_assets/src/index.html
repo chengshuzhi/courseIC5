@@ -6,17 +6,32 @@
     <title>newMicroBlog</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
   </head>
   <body>
+    <header><h1>MicroBlog</h1></header>
     <main>
-      <img src="logo.png" alt="DFINITY logo" />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
+      <label for="message"> What do you want to post?</label>
+      <textarea id="message"></textarea><br>
+
+      <label for="otp">OTP</label><br>
+      <input id="otp"></input>
+      <button id="post">Post</button>
+      <span id="error"></span><br>
+
+      <label for="myPosts:">My Posts:</label>
+      <section id="posts">
+
+      </section><br>
+
+
+      <label for="myFollows:">My Follows:</label>
+      <section id="follows"></section>
+
+      <label for="followPosts:">Follows Posts:</label>
+      <section id="followPosts"></section>
+      
+
     </main>
   </body>
 </html>
